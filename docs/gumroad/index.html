@@ -36,6 +36,12 @@
 .g-ex p:last-child{margin-bottom:0}
 .g-src{font-size:13px;color:var(--muted);margin:0 0 26px}
 .g-src a{color:var(--berry);font-weight:600;border-bottom:1px solid var(--mauve)}
+.g-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;margin-top:34px;align-items:start}
+.g-story{border-top:2px solid var(--plum);padding-top:22px}
+.g-story h3{margin-top:6px}
+.g-kind{text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:700;color:var(--berry);margin-bottom:0}
+.g-lead-in{color:var(--muted);margin-top:22px;margin-bottom:0}
+.g-story .g-ex{margin-top:12px}
 .g-links{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px}
 .g-links a{font-weight:700;font-size:14px;color:var(--berry);border-bottom:1px solid var(--mauve)}
 .g-contact{background:var(--plum);color:var(--paper);padding:84px 0}
@@ -44,17 +50,18 @@
 .g-contact p{max-width:640px;color:#efe6ea}
 .g-contact a.big{display:inline-block;font:500 clamp(22px,3vw,34px) 'Playfair Display',Georgia,serif;border-bottom:1px solid #d4aebb;margin:10px 0 22px}
 .g-contact .g-links a{color:#f0d8e2;border-color:#7a6875}
+@media(max-width:900px){.g-two{grid-template-columns:1fr}}
 @media(max-width:820px){.g-arc,.g-grid,.g-grid.three{grid-template-columns:1fr 1fr}.g-arc{grid-template-columns:1fr}.site-header nav{display:none}}
 @media(max-width:520px){.g-grid,.g-grid.three{grid-template-columns:1fr}}
 </style></head><body>
-<header class="site-header"><a class="wordmark" href="/susie-portfolio/gumroad/">S<span class="slash">/</span>K<span class="wordmark-full"> Susie Kirchgessner</span></a><nav aria-label="Main navigation"><a href="#legends">Literary Legends</a><a href="#wellread">Well Read</a><a href="#writing">Writing</a><a href="#contact">Contact</a></nav></header>
+<header class="site-header"><a class="wordmark" href="/susie-portfolio/gumroad/">S<span class="slash">/</span>K<span class="wordmark-full"> Susie Kirchgessner</span></a><nav aria-label="Main navigation"><a href="#legends">Literary Legends</a><a href="#wellread">Well Read</a><a href="#writing">Fiction</a><a href="#contact">Contact</a></nav></header>
 <main>
 
 <section class="g-hero wrap">
 <div class="eyebrow"><span class="line"></span> Portfolio for Gumroad Creators in Residence</div>
 <h1>Susie<br><em>Kirchgessner.</em></h1>
 <p class="g-lead">I’m a character-driven storyteller who works in image and text. I take a character and their emotional arc and turn it into art for your wall or a story you can get lost in.</p>
-<p class="g-sub">Three things I make: gothic literary wall art (<a href="#legends" class="text-link"><u>Literary Legends</u></a>), skeleton-and-books wall art (<a href="#wellread" class="text-link"><u>The Well Read Collection</u></a>), and cozy paranormal fiction, which I publish as Sutton Krowley (<a href="#writing" class="text-link"><u>Mabel’s Magical Morsels</u></a>).</p>
+<p class="g-sub">Three things I make: gothic literary wall art (<a href="#legends" class="text-link"><u>Literary Legends</u></a>), skeleton-and-books wall art (<a href="#wellread" class="text-link"><u>The Well Read Collection</u></a>), and fiction, which I publish as Sutton Krowley (<a href="#writing" class="text-link"><u>a cozy comedy and a romance</u></a>).</p>
 </section>
 
 <section class="g-how"><div class="wrap">
@@ -122,19 +129,22 @@
 
 <section class="g-sec" id="writing"><div class="wrap">
 <p class="overline">03 / Fiction</p>
-<h2>Mabel’s Magical Morsels</h2>
-<div class="g-copy">
-<p>I write fiction as Sutton Krowley. <em>Mabel’s Magical Morsels</em> is a cozy paranormal comedy web serial about a baker in Spellbound Springs, a town where the curses are more like guidelines than actual rules. The first ten chapters are live on Substack.</p>
-<p>Here are two short pieces. The first is the tail end of a chapter with Gerald. Gerald is Gerald.</p>
-</div>
+<h2>Fiction</h2>
+<div class="g-copy"><p>I write fiction as Sutton Krowley. Here are two stories in two very different moods, so you can see the range.</p></div>
+
+<div class="g-two">
+<article class="g-story">
+<p class="g-kind">Cozy paranormal comedy · Web serial</p>
+<h3>Mabel’s Magical Morsels</h3>
+<p>A baker in Spellbound Springs, a town where the curses are more like guidelines than actual rules. The first ten chapters are live on Substack.</p>
+<p class="g-lead-in">First, the tail end of a chapter with Gerald. Gerald is Gerald.</p>
 <blockquote class="g-ex">
 <p>“Of course not. Now, about our victory speech – I’ve prepared three versions. One dignified, one revolutionary, and one that may or may not involve the petit fours performing an interpretive dance to ‘Don’t Cry For Me, Mascarpone.’”</p>
 <p>Mabel closed the recipe box with a snap. “We are not doing the mascarpone one.”</p>
 <p>“We’ll revisit it,” Gerald said, already looking pleased with himself. “Democratically.”</p>
 </blockquote>
 <p class="g-src">From “Meet Gerald.” <a href="https://suttonkrowley.substack.com/p/meet-gerald" target="_blank" rel="noopener noreferrer">Read the chapter ↗</a></p>
-
-<div class="g-copy"><p>And the moment Mabel discovers the baked goods have opinions:</p></div>
+<p class="g-lead-in">And the moment Mabel discovers the baked goods have opinions:</p>
 <blockquote class="g-ex">
 <p>To her astonishment, the baguettes were arguing. In French.</p>
 <p>“Non, non, non!” one baguette exclaimed. “You cannot possibly suggest that butter is superior to olive oil! It’s a disgrace to our crusty heritage!”</p>
@@ -144,17 +154,12 @@
 <p>“Speak for yourself,” a particularly crusty specimen drawled. “Some of us enjoy a little pain.”</p>
 </blockquote>
 <p class="g-src">From “A Spellbound Soufflé.” <a href="https://suttonkrowley.substack.com/p/a-spellbound-souffle" target="_blank" rel="noopener noreferrer">Read the chapter ↗</a></p>
+</article>
 
-<h3>The world behind it</h3>
-<div class="g-copy">
-<p>Mabel’s world runs on a story bible I built in Notion: lore, magic systems, factions, beings, locations, a full cast, and a “Decision Graveyard” for ideas I killed on purpose. The magic has rules. It’s inherited, relational, and alive, and it runs on a “cozy covenant.” There’s a sneeze rule. And the chaos scales with Mabel’s emotional state: <em>calm Mabel = manageable magic; stressed Mabel = revolutionary dinner rolls.</em></p>
-<p>The ridiculous stuff only works if the world itself makes sense, so I build the rules first.</p>
-</div>
-
-<h3>A different register: Meta Vertical Romance</h3>
-<div class="g-copy">
-<p>MVR is a romance I’m drafting, told in dual POV by Ainsley, a romance author, and Silas. It’s still in progress. This is Ainsley, in a bookstore, drifting toward the classics. (I’ve trimmed it with […] for length.)</p>
-</div>
+<article class="g-story">
+<p class="g-kind">Romance · Dual POV · Work in progress</p>
+<h3>Meta Vertical Romance (MVR)</h3>
+<p>A romance told in dual POV by Ainsley, a romance author, and Silas. This is Ainsley, in a bookstore, drifting toward the classics. (Trimmed with […] for length.)</p>
 <blockquote class="g-ex">
 <p>And then the classics.</p>
 <p>I don’t know who I think I’m fooling. I always end up in the classics. Every bookstore, every city, every version of me that has ever stood in front of a wall of old spines — I end up here. Running my fingers along them like I’m checking for something. Like there’s a pulse.</p>
@@ -169,6 +174,15 @@
 <p>I hadn’t gotten a choice. I’d just gotten an after.</p>
 </blockquote>
 <p class="g-src">From Chapter 2 of a work in progress.</p>
+</article>
+</div>
+
+<h3>Building the worlds</h3>
+<div class="g-copy">
+<p>Both stories start with structure. Mabel’s world runs on a story bible I built in Notion: lore, magic systems, factions, beings, locations, a full cast, and a “Decision Graveyard” for ideas I killed on purpose. The magic has rules. It’s inherited, relational, and alive, and it runs on a “cozy covenant.” There’s a sneeze rule. And the chaos scales with Mabel’s emotional state: <em>calm Mabel = manageable magic; stressed Mabel = revolutionary dinner rolls.</em></p>
+<p>MVR runs on a chapter database that tracks whose POV each chapter is in, the setting, the problem, and what changes by the end of it.</p>
+<p>The ridiculous stuff only works if the world itself makes sense, so I build the rules first.</p>
+</div>
 
 <h3>How the writing gets made</h3>
 <div class="g-copy">
