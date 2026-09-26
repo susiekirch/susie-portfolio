@@ -1,6 +1,6 @@
 from pathlib import Path
 from html import escape
-root=Path(__file__).parent/'dist'
+root=Path(__file__).parent/'docs'
 projects=[
 ('creative-strategy','Strategy','Creative Strategy & Brand','From scattered ideas to a clear direction','A sample case-study framework for positioning, audience thinking, brand direction, and a practical next move.','Discovery notes · Positioning · Direction','strategy'),
 ('ai-workflows','AI & Systems','AI & Creative Workflows','A repeatable path from idea to output','A space for prompt and context design, research methods, human review, and useful creative systems.','Research · Prompt design · Workflow','systems'),
